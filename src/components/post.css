@@ -1,0 +1,257 @@
+.posts {
+    padding: 50px 100px;
+}
+
+
+.posts > ul > li {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.posts > ul > li .upper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.posts > ul > li .upper .profile {
+    display: flex;
+    align-items: center;
+}
+
+
+.posts > ul > li .upper .profile .img {
+    width: 40px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.posts > ul > li .upper .profile > p {
+    font-size: 17px;
+    color: #333;
+}
+
+
+.posts > ul > li .upper .param-icon {
+    font-size: 20px;
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
+
+.posts > ul > li .upper .param-icon:hover {
+    color: #333;
+}
+
+
+.posts > ul > li .upper .par-popup {
+    position: absolute;
+    right: 4px;
+    top: 20px;
+    padding: 10px 9px;
+    border-radius: 5px;
+    background-color: rgb(187, 187, 187);
+    width: 115px;
+    height: 43px;
+    border: 1px solid #a4a1a1;
+}
+
+.posts > ul > li .upper .par-popup > span{
+    color: #025875;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.posts > ul > li .upper .par-popup > span:hover{
+    color: #045069;
+    text-decoration: underline;
+}
+
+
+.posts > ul > li .title {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #aaa9a9;
+    font-weight: bold;
+    color: #007ba4;
+}
+
+.posts > ul > li .body {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.posts > ul > li .read-more {
+    display: flex;
+    justify-content: end;
+}
+
+.posts > ul > li .read-more span a{
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.posts > ul > li .read-more span a:hover {
+    text-decoration: underline;
+    color: #0060aa;
+}
+
+
+
+
+
+
+
+
+/* ================ post Item ========================== */
+
+.post-item {
+    border: 2px solid #F00;
+    background-color: red;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* ================ create Post ========================== */
+
+.create-post {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px;
+    margin: 60px;
+    box-shadow: 0px 1px 6px #333;    
+    background-color: #f9f9f9; 
+}
+
+
+.create-post > h2 {
+    color: var(--second-color);
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.create-post> form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-post> form > input {
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.create-post> form > textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    font-family:Arial, sans-serif;
+    border-radius: 5px;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+
+.create-post> form > input:focus, .create-post> form > textarea:focus {
+    outline: none;
+}
+.create-post> form button {
+    margin-top: 50px;
+    width: 100px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post> form button:hover {
+    transform: scale(1.1);
+}
+
+
+.creating-post-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    background-color: rgb(4, 168, 4);
+    color: #FFF;
+    padding: .75rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    position: fixed;
+    z-index: 90;
+    top: 80px;
+    left: -550px;
+    animation: showMessage 5s ease-in-out;
+}
+
+@keyframes showMessage {
+    0% {
+        transform: translateX(0px);
+    }
+
+    15% {
+        transform: translateX(1200px);
+    }
+
+    19% {
+        transform: translateX(900px);
+    }
+
+    22% {
+        transform: translateX(1100px);
+    }
+
+    26% {
+        transform: translateX(950px);
+    }
+
+    30% {
+        transform: translateX(1000px);
+    }
+    95% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+.creating-post-message > span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,78 @@
+a {
+    color: #fff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    /* background-color: #0471A6; */
+    background-color: var(--main-color);
+    box-shadow: 1px 1px 7px #000;
+}
+
+.navbar .container {
+    padding:10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* navbar -----------LEFT-----------------  */
+
+.navbar .container ul {
+    display: flex;
+}
+
+.navbar .container ul > li {
+    margin: 0 5px;
+    padding: 10px;
+    color: #FFFF;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.navbar .container ul > li:hover {
+    border-bottom: 2px solid #FFF;
+    padding: 10px 10px 8px 10px;
+}
+
+/* navbar -----------RIGHT-----------------  */
+
+.navbar .container .right {
+    display: flex;
+}
+
+.navbar .container .right input:first-of-type {
+    border: none;
+    width: 400px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.navbar .container .right input:first-of-type::placeholder {
+    font-size: 17px;
+}
+
+.navbar .container .right input:first-of-type:focus {
+    outline: none;
+}
+
+
+.navbar .container .right input:last-of-type {
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
